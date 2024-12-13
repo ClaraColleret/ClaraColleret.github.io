@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Clara Colleret</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="tete.svg">
+  <!-- meta description -->
+  <meta name="description" content="Portfolio de Clara Colleret, designer graphique.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <!-- https://jenseign.com/le-h1-logo/ -->
+    <h1><a href="index.html"><img src="tete.svg" alt="Clara Colleret" width="64" height="64"></a></h1>
+
+
+    <nav class="header-nav">
+      <div class="nav-box"><a href="informations.html" class="nav-link informations">informations</a></div>
+      <div class="nav-box"><a href="https://instagram.com/cllrtclara" class="nav-link instagram">instagram</a></div>
+    </nav>
+    </div>
+  </header>
+
+  <div class="projets">
+    <a href="coffret.html" class="projet">
+      <img src="mesimg/carrecoffret.jpg" alt="Coffret">
+      <h2>Coffret</h2>
+    </a>
+    <a href="affiche.html" class="projet">
+      <img src="mesimg/carreaffiche.jpg" alt="affiche">
+      <h2>Affiche</h2>
+    </a>
+    <a href="Menstruosite.html" class="projet">
+      <img src="mesimg/carremenstru.jpg" alt="Menstruosité">
+      <h2>Menstruosité</h2>
+    </a>
+    <a href="Typo.html" class="projet">
+      <img src="mesimg/carrebranly.jpg" alt="Répertoire typo">
+      <h2>Répertoire typo</h2>
+    </a>
+    <a href="Merch.html" class="projet">
+      <img src="mesimg/carebonnet.jpg" alt="Merch">
+      <h2>Merch</h2>
+    </a>
+    <a href="Revue.html" class="projet">
+      <img src="mesimg/carretotoro.jpg" alt="Revue">
+      <h2>Revue</h2>
+    </a>
+    <a href="Couvertures.html" class="projet">
+      <img src="mesimg/carrecouv.jpg" alt="Couvertures">
+      <h2>Couvertures</h2>
+    </a>
+    <a href="Ikebana.html" class="projet">
+      <img src="mesimg/carreikebana.jpg" alt="Ikebana">
+      <h2>Ikebana</h2>
+    </a>
+   
+
+  </div>
+
+  <script>
+    const projets = document.querySelectorAll('.projet');
+    projets.forEach(projet => {
+      projet.addEventListener('mouseover', () => {
+        projets.forEach(p => p.classList.add('unactive'));
+        projet.classList.remove('unactive');
+      });
+      projet.addEventListener('mouseout', () => {
+        projets.forEach(p => p.classList.remove('unactive'));
+      });
+    });
+  </script>
+</body>
+</html>
